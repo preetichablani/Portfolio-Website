@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+        <div>
+          <div style="font-weight:1000">Preeti Chablani</div>
+          <div style="font-size:15px;color:var(--muted)">BCA 3rd Semester</div>
+        </div>
+      </div>
+      <nav>
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
+      </nav>
+    </header><main>
+  <section class="hello">
+    <div class="intro">
+      <h1>Hello — I'm <span style="color:var(--accent)">PREETI CHABLANI</span></h1>
+      <p>I build clean, accessible websites and small web apps.
+         I love working on UI, performance, and animations.
+         A passionate learner and web developer,
+          I enjoy crafting interactive designs that blend creativity with functionality.
+      </p>
+      <div class="proj">
+        <a class="btn btn-primary" href="mailto:preetichablani2006@gmail.com" title="Email">Hire me</a>
+        <a class="btn btn-ghost" href="https://github.com/preeticode"title="GitHub">See projects</a>
+      </div>
+
+      <div style="margin-top:18px">
+        <div class="section-title"><h2>Skills</h2></div>
+        <div class="skills">
+          <div class="skill"><b>C Programming</b></div>
+          <div class="skill"><b>HTML</b></div>
+          <div class="skill"><b>CSS</b></div>
+          <div class="skill"><b>JAVA</b></div>
+          <div class="skill"><b>Linux</b></div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="profile-card">
+      <img src="img.jpg" alt="">
+      <h3>PREETI CHABLANI</h3>
+      <p>Based in India — passionate about web development and always eager to learn new skills</p>
+      <div class="socials">
+        <a href="mailto:preetichablani2006@gmail.com" title="Email">✉</a>
+        <a href="https://github.com/preeticode"title="GitHub">GH</a>
+        <a href="https://www.Linkedin.com/in/PreetiChablani" title="LinkedIn">IN</a>
+        <a href="https://www.behance.net/PreetiChablani" title="Behance">Be</a>
+      </div>
+    </aside>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><h2>About</h2></div>
+    <div class="card">
+      <p>I am a developer focused on creating delightful and performant user interfaces.
+         I enjoy turning complex problems into simple, beautiful solutions.
+         Passionate about design and code, 
+         I enjoy blending creativity with technology to build engaging web experiences.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title"><h2>Projects</h2></div>
+    <div class="grid projects">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Short description — add a GitHub link</p>
+        <div class="meta">
+          <div style="color:var(--muted)">JAVA</div>
+          <a href="https://github.com/preetichablani/ASCII-Project.git" style="text-decoration:none;color:var(--accent);font-weight:700">Code →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Short description — add a GitHub link</p>
+        <div class="meta">
+          <div style="color:var(--muted)">JAVA</div>
+          <a href="https://github.com/preetichablani/Java-Pattern-Project.git" style="text-decoration:none;color:var(--accent);font-weight:700">Code →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title"><h2>Contact</h2></div>
+    <div class="contact-grid">
+      <div class="card contact-form">
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your email" />
+        <textarea placeholder="Message — tell me about the project"></textarea>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-primary">Send message</button>
+          <button class="btn btn-ghost">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p style="color:var(--muted)">Email: <a href="mailto:preetichablani2006@gmail.com" style="color:var(--accent);text-decoration:none">mailto:preetichablani2006@gmail.com</a></p>
+        <p style="color:var(--muted)">Location: Ajmer, India</p>
+        <div style="margin-top:10px;color:var(--muted)">Available for remote work and freelance projects.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© <span id="year"></span> PREETI CHABLANI </div>
+    <div style="color:var(--muted)">Built with ❤ HTML & CSS</div>
+  </footer>
+
+</main>
+
+  </div> 
+   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  </body>
+</html>
